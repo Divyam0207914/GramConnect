@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-family: 'Inter', sans-serif;
+    /* Prevent scrollbar from reserving space */
+    scrollbar-gutter: stable;
+  }
+}
+
+/* Floating Scrollbar - Only Thumb Visible, No Track */
+/* WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(248, 152, 32, 0.5);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(248, 152, 32, 0.8);
+}
+
+/* Firefox scrollbar - floating style */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(248, 152, 32, 0.5) transparent;
+}

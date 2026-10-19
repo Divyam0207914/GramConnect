@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Production builds
+dist/
+**/dist/
+build/
+
+# Uploads & Temporary data
+uploads/
+**/uploads/
+*.log
+npm-debug.log*
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local offline ML, Blockchain & Experimental Agent (kept on local disk only)
+Spch_to_txt/
+img_to_txt/
+blockchain-systemHash/
+backend/blockchain/
+backend/agent/
+backend/temp/

@@ -1,0 +1,46 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GramConnect logo mark">
+  <!-- background circle for safe padding (optional when placing on colored backgrounds) -->
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FF9A3C"></stop>
+      <stop offset="1" stop-color="#FF6A00"></stop>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="28" flood-color="#000" flood-opacity="0.15"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- optional light oval base for context -->
+  <circle cx="512" cy="512" r="480" fill="white"></circle>
+
+  <!-- main pin / emblem -->
+  <g transform="translate(0, -18)">
+    <!-- pin outer (subtle rounded teardrop) -->
+    <path d="M512 160
+             C380 160 272 268 272 400
+             C272 590 512 880 512 880
+             C512 880 752 590 752 400
+             C752 268 644 160 512 160Z" fill="url(#g1)" filter="url(#softShadow)"></path>
+
+    <!-- inner negative-space circle (gives pin hole feel) -->
+    <circle cx="512" cy="380" r="120" fill="#FFF8F1"></circle>
+
+    <!-- network-path: three nodes connected by smooth curve -->
+    <!-- connecting curve -->
+    <path d="M420 420
+             C460 360 560 360 620 420" fill="none" stroke="#FF7A18" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" opacity="0.98"></path>
+
+    <!-- nodes -->
+    <circle cx="420" cy="420" r="26" fill="#FFB27A" stroke="#FF7A18" stroke-width="6"></circle>
+    <circle cx="520" cy="350" r="26" fill="#FFB27A" stroke="#FF7A18" stroke-width="6"></circle>
+    <circle cx="620" cy="420" r="26" fill="#FFB27A" stroke="#FF7A18" stroke-width="6"></circle>
+
+    <!-- subtle inner highlight for depth -->
+    <path d="M512 180
+             C428 180 360 245 360 330
+             C360 480 512 760 512 760
+             C512 760 664 480 664 330
+             C664 245 596 180 512 180Z" fill="rgba(255,255,255,0.06)"></path>
+  </g>
+</svg>
